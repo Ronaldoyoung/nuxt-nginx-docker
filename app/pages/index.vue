@@ -3,7 +3,7 @@
     <div>
       <Logo />
       <h1 class="title">
-        app hi ~~~~ please Jenkins
+        app hi!!! please Jenkins
       </h1>
       <div class="links">
         <a
