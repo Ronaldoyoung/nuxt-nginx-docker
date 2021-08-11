@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  django36:
+    image: ubuntu_django36:latest
+    build:
+      context: ./drone-back
+      dockerfile: Dockerfile
+    restart: always
+    volumes:
+      - $HOME/.aws/credentials:/root/.aws/credentials:ro
+      - /home/ubuntu/model:/usr/src/app/utils/files/model
+    ports:
+      - "8000:8000"
